@@ -16,7 +16,7 @@ def get_stream_obj(query):
 
 @app.route("/")
 def index():
-    return "This program permits you to get direct access to streams by using Streamlink. Alternative link : https://iptv--iptv.repl.co/streamlink?url=*insert url*. Enjoy ! LaneSh4d0w."
+    return "This program permits you to get direct access to streams by using Streamlink. How does that work ? Simply add '/iptv-query?streaming-ip=*insert url*' at the page URL to make it work. Thanks to @keystroke3 from GitHub for helping me code this tool. Enjoy ! LaneSh4d0w"
 
 
 @app.route("/iptv-query")
