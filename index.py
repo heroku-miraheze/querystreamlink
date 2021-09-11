@@ -61,7 +61,7 @@ def api_formated(output, api, query=""):
 def query_handler(args, api):
     """Checks and tests arguments before serving request"""
     if args:
-        query = args.get("streaming-ip")
+        query = args.get("link")
         if not query:
             message = "streaming-ip string is empty"
             return api_formated(message, api)
@@ -85,7 +85,7 @@ def index():
     return "This program permits you to get direct access to streams by using Streamlink. Enjoy ! heroku-miraheze. Special thanks to Keystroke for the API usage."
 
 
-@app.route("/iptv-query", methods=['GET'])
+@app.route("/query", methods=['GET'])
 @limiter.limit("20/minute")
 @limiter.limit("1/second")
 def home():
